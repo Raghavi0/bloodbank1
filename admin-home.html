@@ -1,0 +1,70 @@
+
+
+
+<html>
+    <head>
+        <title>Admin login</title>
+        <link rel="stylesheet" type="text/css" href="s1.css">
+        
+
+    </head>
+    <body>
+        <div class="full">
+            <div class="inner_full">
+                <div class="header">
+            <h2>Blood Bank And Donor Management System</h2>
+        </div>
+
+                    <br>
+
+                        <div class="hero-section">
+                            <div class="text-box">
+                                <h2>Why Blood Donation Matters?</h2>
+                                <p>
+                                    Blood donation is one of the most impactful acts of kindness that any person can do. Every unit 
+                                    of donated blood can save up to three lives, helping patients suffering from severe injuries, 
+                                    surgeries, cancer treatments, anemia, and many life-threatening conditions. Blood cannot be 
+                                    manufactured in laboratories; it can only come from generous donors. Regular and voluntary blood 
+                                    donation ensures that hospitals have a sufficient supply to handle medical emergencies at any time. 
+                                    By donating blood, you become a hero to someone in need and contribute to a healthier, safer society.
+                                </p>
+                            </div>
+
+                            <div class="hero-image">
+                                <img src="https://up.yimg.com/ib/th/id/OIP.y0-MkQ7CjAXS24G5LvXtmwHaFj?pid=Api&rs=1&c=1&qlt=95&w=133&h=99" alt="Blood Donation">
+                            </div>
+                        </div>
+
+                        <?php
+                        $un=$_SESSION['un'];
+                        if(!$un)
+                            {
+                                header("Location:index.php");
+                            }
+                        ?>
+                    
+                            <div class="menu-section">
+                                    <ul class="menu-row">
+                                        <li><a href="donor-red.html"><i class="fas fa-user-plus"></i> Donor Registration</a></li>
+                                        <li><a href="donor-list.html"><i class="fas fa-users"></i> Donor List</a></li>
+                                    </ul>
+
+                                    <ul class="menu-row">
+                                        <li><a href="stock-blood-list.html"><i class="fas fa-warehouse"></i> Stock Blood List</a></li>
+                                        <li><a href="out-stock-blood-list.html"><i class="fas fa-exclamation-triangle"></i> Out Stock Blood</a></li>
+                                    </ul>
+
+                                    <ul class="menu-row">
+                                        <li><a href="exchange-blood-list.html"><i class="fas fa-exchange-alt"></i> Exchange Blood</a></li>
+                                        <li><a href="ngo-list.html"><i class="fas fa-hand-holding-heart"></i> NGO List</a></li>
+                                    </ul>
+                            </div>
+                
+                </div>
+                <div class="footer" ><h3 align="center">copyrignt@myproject</h3></div>
+                <br><br><br>
+                <center><button><a href="index.html">Logout</a></button></center>
+            </div>
+        </div>
+    </body>
+</html>

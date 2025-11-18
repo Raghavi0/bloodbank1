@@ -1,0 +1,75 @@
+
+
+
+<html>
+    <head>
+        <title>Donor Registration</title>
+        <link rel="stylesheet" type="text/css" href="donor.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    </head>
+    <body>
+        <div class="full">
+            <div class="inner_full">
+             <div class="header">
+               <h2>Blood Bank And Donor Management System</h2>
+                </div>
+                                       <div class="container">
+                        <h2>Blood Donor Registration Form</h2>
+
+                            <form action="" method="POST">
+
+                                <label>Full Name</label>
+                                <input type="text" name="name" placeholder="Enter full name" required>
+
+                                <label>Father Name</label>
+                                <input type="text" name="father_name" placeholder="Enter father name" required>
+
+                                <label>Address</label>
+                                <textarea name="address" rows="3" placeholder="Enter address" required></textarea>
+
+                                <label>City</label>
+                                <input type="text" name="city" placeholder="Enter your city" required>
+
+                                <label>Age</label>
+                                <input type="number" name="age" min="18" max="65" placeholder="Enter age (18–65)" required>
+
+                                <label>Email</label>
+                                <input type="email" name="email" placeholder="example@mail.com" required>
+
+                                <label>Mobile Number</label>
+                                <input type="tel" name="mobile" maxlength="10" placeholder="Enter 10-digit number" required>
+
+                                <label>Select Blood Group</label>
+                                <select name="blood_group" required>
+                                    <option value="">-- Select Blood Group --</option>
+                                    <option>A+</option>
+                                    <option>A-</option>
+                                    <option>B+</option>
+                                    <option>B-</option>
+                                    <option>O+</option>
+                                    <option>O-</option>
+                                    <option>AB+</option>
+                                    <option>AB-</option>
+                                </select>
+
+                                <button type="submit" name="sub">Save</button>
+
+                            </form>
+
+                            
+                    </div>      
+                
+                </div>
+                <div class="footer" ><h3 align="center">copyrignt@myproject</h3></div>
+                <br><br>
+                <center>
+                        <button> <a href="admin-home.html" 
+                    style="display:inline-block;padding:10px 25px;background:#FF7F7F;color:white;font-size:18px;
+                            border-radius:10px;text-decoration:none;font-weight:bold;">Back</a></button>
+                    </center>
+
+            </div>
+        </div>
+    </body>
+</html>
